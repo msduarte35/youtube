@@ -20,13 +20,16 @@ export const Container = styled.header`
 export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
+
+
+
 `;
 // Container for the button element within the header
 export const ButtonContainer = styled.div`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin: 0 10px 0 0;
+  margin: 0 16px 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
