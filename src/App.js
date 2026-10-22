@@ -6,7 +6,14 @@ function App() {
     <div className="App">
     
       <Header />
-    
+       <div style={{ width: "100%", display: "flex" }}>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+      </div>
     </div>
   );
 }
