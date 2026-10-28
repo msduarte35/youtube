@@ -4,9 +4,12 @@ import { Container,
       ButtonIcon,
       SearchContainer,
       SearchInputContainer,
-      SearchInput } from "./style";
+      SearchInput,
+      SearchButton } from "./style";
 import hamburgerIcon from "../../assets/hamburger.png";
 import Logo from "../../assets/YouTube-Logo.png";
+import SearchIcon from "../../assets/search.png";
+import MicIcon from "../../assets/microfone-gravador.png";
  
 
 // const ButtonContainer = styled.div`
@@ -26,7 +29,7 @@ function Header() {
         <ButtonIcon alt="Button Icon" src={hamburgerIcon} />
         </ButtonContainer>
         <img
-          style={{ cursor: "pointer", width: "40px" }}
+          style={{ cursor: "pointer", width: "100px" }}
           alt="Logo"
           src={Logo}
         />
@@ -35,8 +38,14 @@ function Header() {
         <SearchContainer>
             <SearchInputContainer>
                <SearchInput  placeholder="Pesquisar" />
-
             </SearchInputContainer>
+            <SearchButton>
+              <ButtonIcon alt="Search Icon" src={SearchIcon} />
+            </SearchButton>
+
+            <ButtonContainer>
+              <ButtonIcon alt="Search Icon" src={MicIcon} />
+            </ButtonContainer>
 
         </SearchContainer>
 

@@ -21,8 +21,6 @@ export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
 
-
-
 `;
 // Container for the button element within the header
 export const ButtonContainer = styled.div`
@@ -68,4 +66,19 @@ export const SearchInput = styled.input`
   border: none;
   outline: none;
   
+`;
+export const SearchButton = styled.div`
+  width: 70px;
+  height: 35px;
+  border: 1px solid #d3d3d3;
+  border-radius: 0 40px 40px 0;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #e6e6e6;
+  }
 `;
