@@ -5,11 +5,14 @@ import { Container,
       SearchContainer,
       SearchInputContainer,
       SearchInput,
-      SearchButton } from "./style";
+      SearchButton,
+     HeaderButton } from "./style";
 import hamburgerIcon from "../../assets/hamburger.png";
 import Logo from "../../assets/YouTube-Logo.png";
 import SearchIcon from "../../assets/search.png";
 import MicIcon from "../../assets/microfone-gravador.png";
+import NotificationIcon from "../../assets/sino.png";
+import videoIcon from "../../assets/video.png";
  
 
 // const ButtonContainer = styled.div`
@@ -25,7 +28,7 @@ function Header() {
     <div>
       <Container>
         <LogoContainer>
-        <ButtonContainer>
+        <ButtonContainer margin="0 16px 0 0">
         <ButtonIcon alt="Button Icon" src={hamburgerIcon} />
         </ButtonContainer>
         <img
@@ -43,17 +46,27 @@ function Header() {
               <ButtonIcon alt="Search Icon" src={SearchIcon} />
             </SearchButton>
 
-            <ButtonContainer>
+            <ButtonContainer margin = "0 0 0 16px"> 
               <ButtonIcon alt="Search Icon" src={MicIcon} />
             </ButtonContainer>
-
         </SearchContainer>
 
 
+        <HeaderButton>
+        <ButtonContainer margin="0 0 0 10px">
+        <ButtonIcon alt="" src={videoIcon} />
+        </ButtonContainer>
+        <ButtonContainer margin="0 0 0 10px">
+          <ButtonIcon alt="" src={NotificationIcon} />
+        </ButtonContainer>
+        <ButtonContainer margin="0 0 0 10px">
+          M
+        </ButtonContainer>
 
 
+        </HeaderButton>
 
-      </Container>
+        </Container>
 
     </div>
   )

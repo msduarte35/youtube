@@ -23,11 +23,11 @@ export const LogoContainer = styled.div`
 
 `;
 // Container for the button element within the header
-export const ButtonContainer = styled.div`
+export const ButtonContainer = styled.div<{margin?: string}>`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin: 0 16px 0 0;
+  margin: ${({margin}) => margin? margin : 0};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,3 +82,8 @@ export const SearchButton = styled.div`
     background-color: #e6e6e6;
   }
 `;
+
+export const HeaderButton = styled.div`
+  width: 200px;
+  display: flex;
+`;  
